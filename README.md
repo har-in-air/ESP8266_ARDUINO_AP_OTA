@@ -3,7 +3,7 @@ I was looking for Arduino code examples for OTA updates of ESP8266 sketches with
 The existing examples were using AP+STA mode which didn't work for me. I wanted to be able to
 update units in the field from a laptop or smartphone without having the ESP8266 connect to an existing WiFi network first.
 
-I started tinkering with the Arduino Examples->ESP8266HTTPUpdateServer->WebUpdater sketch and finally got it working ! The trick 
+I started tinkering with the Arduino Examples->ESP8266HTTPUpdateServer->WebUpdater sketch and finally got it working. The trick 
 seems to be to disconnect station mode first before setting up as access point.
 
 ## Steps 
