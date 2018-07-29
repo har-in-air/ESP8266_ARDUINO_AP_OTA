@@ -23,16 +23,15 @@ and enter the url http://espotaserver.local/update (or http://192.168.4.1/update
 
 You should see the httpupdate server webpage with a prompt to select the firmware binary to upload.
 
+![Screenshot](docs/scr3.png)
+
 Go back to the Arduino sketch. In the loop() method, enable the code to blink the led by changing #if 0 to #if 1.
 Now select the Arduino menu "Sketch->Export compiled Binary". This will export the compiled binary file to your Arduino
 sketch folder.
 
-![Screenshot](docs/scr3.png)
-
-Go back to the ota server webpage, select the binary file, and hit upload.
-
 ![Screenshot](docs/scr4.png)
 
+Go back to the ota server webpage, select the binary file, and hit upload.
 
 You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
 the led blinking.
