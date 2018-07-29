@@ -60,7 +60,7 @@ void setup(void){
 
 void loop(void){
   httpServer.handleClient();
-#if 1
+#if 0
   digitalWrite(LED_BUILTIN, LOW);
   delay(100);
   digitalWrite(LED_BUILTIN, HIGH);
