@@ -31,5 +31,7 @@ sketch folder.
 
 Go back to the ota server webpage, select the binary file, and hit upload.
 
+![Screenshot](docs/scr4.png)
+
 You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
 the led blinking.
