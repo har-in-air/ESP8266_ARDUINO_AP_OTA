@@ -6,9 +6,12 @@ update units in the field from a laptop or smartphone without having the ESP8266
 I started tinkering with the Arduino Examples->ESP8266HTTPUpdateServer->WebUpdater sketch and finally got it working. The trick 
 seems to be to disconnect station mode first before setting up as access point.
 
+## Environment
+Arduino 1.8.5 on Ubuntu 18.04 LTS
+Wemos D1 mini board
+
 ## Steps 
 Compile and upload the APWebUpdater.ino sketch to your module via the standard USB-UART interface. 
-In my example, I am using a Wemos D1 mini board.
 
 ![Screenshot](docs/scr1.png)
 
