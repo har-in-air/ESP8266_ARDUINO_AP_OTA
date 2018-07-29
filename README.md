@@ -16,7 +16,7 @@ Remember to reset or power-cycle the board after uploading, even if you see the 
 This is important, if you forget, you will later see a failure message during the OTA update about a bootstrap problem 
 and a prompt to reset the board. 
 
-In the code, the access point is named EspAccessPoint with no access password. Connect to this access point. Open your web browser
+In the example code, the access point is named EspAccessPoint with no access password. Connect to this access point. Open your web browser
 and enter the url http://espotaserver.local/update (or http://192.168.4.1/update).
 
 ![Screenshot](docs/scr2.png)
@@ -32,5 +32,7 @@ Go back to the ota server webpage, select the binary file, and hit upload.
 
 ![Screenshot](docs/scr4.png)
 
-You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
+![Screenshot](docs/scr5.png)
+
+Now select the update button. You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
 the led blinking.
