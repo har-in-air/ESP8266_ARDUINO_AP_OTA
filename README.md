@@ -28,11 +28,13 @@ You should see the httpupdate server webpage with a prompt to select the firmwar
 Go back to the Arduino sketch. In the loop() method, enable the code to blink the led by changing #if 0 to #if 1.
 Now select the Arduino menu "Sketch->Export compiled Binary". This will compile the code and then export the compiled binary file to your Arduino sketch folder.
 
-Go back to the ota server webpage, select the binary file, and hit upload.
+Go back to the ota server webpage, clock on "Choose file", and select the new binary file in your sketch folder.
 
 ![Screenshot](docs/scr4.png)
 
+After uploading the file, select the update button. 
+
 ![Screenshot](docs/scr5.png)
 
-Now select the update button. You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
+You'll eventually see an acknowledgement of upload success, and the new firmware should start running and you will see
 the led blinking.
