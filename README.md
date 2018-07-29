@@ -10,7 +10,7 @@ seems to be to disconnect station mode first before setting up as access point.
 Compile and upload the APWebUpdater.ino sketch to your module via the standard USB-UART interface. 
 In my example, I am using a Wemos D1 mini board.
 
-![Screenshot](screenshot.png)
+![Screenshot](docs/scr1.png)
 
 Remember to reset or power-cycle the board after uploading, even if you see the reboot messages in the serial monitor.
 This is important, if you forget, you will later see a failure message during the OTA update about a bootstrap problem 
@@ -19,7 +19,7 @@ and a prompt to reset the board.
 In the code, the access point is named EspAccessPoint with no access password. Connect to this access point. Open your web browser
 and enter the url http://espotaserver.local/update (or http://192.168.4.1/update).
 
-![Screenshot](screenshot.png)
+![Screenshot](docs/scr2.png)
 
 You should see the httpupdate server webpage with a prompt to select the firmware binary to upload.
 
@@ -27,7 +27,7 @@ Go back to the Arduino sketch. In the loop() method, enable the code to blink th
 Now select the Arduino menu "Sketch->Export compiled Binary". This will export the compiled binary file to your Arduino
 sketch folder.
 
-![Screenshot](screenshot.png)
+![Screenshot](docs/scr3.png)
 
 Go back to the ota server webpage, select the binary file, and hit upload.
 
