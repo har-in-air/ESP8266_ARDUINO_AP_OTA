@@ -40,12 +40,8 @@ void setup(void){
   Serial.println("Booting Sketch...");
   wificonfig_wifiOn();
   boolean result = WiFi.softAP("EspAccessPoint", ""); // "" => no password
-  if(result == true){
-    Serial.println("AP setup OK");
-    }
-  else{
-    Serial.println("AP setup failed!");
-    }      
+  Serial.println(result == true ? "AP setup OK" : "AP setup failed");
+
   IPAddress myIP = WiFi.softAPIP();  
   Serial.print("Access Point IP address: ");Serial.println(myIP);
   if (mdns.begin("espotaserver", myIP)) {
