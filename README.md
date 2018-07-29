@@ -7,8 +7,8 @@ I started tinkering with the Arduino Examples->ESP8266HTTPUpdateServer->WebUpdat
 seems to be to disconnect station mode first before setting up as access point.
 
 ## Environment
-Arduino 1.8.5 on Ubuntu 18.04 LTS
-Wemos D1 mini board
+* Arduino 1.8.5 on Ubuntu 18.04 LTS
+* Wemos D1 mini board
 
 ## Steps 
 Compile and upload the APWebUpdater.ino sketch to your module via the standard USB-UART interface. 
